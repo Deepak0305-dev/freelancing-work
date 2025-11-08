@@ -34,7 +34,7 @@
                 <a href="#booking">Contact</a>
             </div>
 
-            <a href="#booking" class="book-now-btn">Book Now</a>
+            <a href="tel:+919621970198"  class="book-now-btn">Call Now</a>
 
             <button class="menu-btn" id="menuBtn">
                 <i class="fas fa-bars" style="font-size: 1.5rem;"></i>
@@ -567,7 +567,7 @@
             <div class="gallery-grid">
                 <!-- Gallery Item 1 -->
                 <div class="gallery-item">
-                    <img src="C:\Users\deepa\Downloads\client-tam.png"
+                    <img src="img/tam-1.png"
                         alt="Close-up of puja thali with flowers, fruits and diya arranged beautifully">
                 </div>
 
@@ -609,21 +609,22 @@
                     <p>Fill out the form below and we'll contact you to confirm the details.</p>
                 </div>
 
-                <form class="booking-form">
+                  <form class="booking-form"  action="https://api.web3forms.com/submit" method="POST" id="contactForm"    >
                     <div class="form-grid">
                         <div class="form-group">
+                            <input type="hidden" name="access_key" value="1ac3d514-d984-4353-8956-dfad3d678509">
                             <label for="name">Full Name*</label>
-                            <input type="text" id="name" required>
+                            <input type="text" placeholder="Your Name" id="name" required name="name"  >
                         </div>
 
                         <div class="form-group">
                             <label for="phone">Phone Number*</label>
-                            <input type="tel" id="phone" required>
+                            <input type="tel"   placeholder="Your Contact Number"  id="phone" required name="phone"  >
                         </div>
 
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email">
+                            <label for="email">Email*</label>
+                            <input type="email" placeholder="Your Email" id="email" required name="email">
                         </div>
 
                         <!-- <div class="form-group">
@@ -644,17 +645,17 @@
                             <input type="date" id="date" required>
                         </div> -->
 
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <label for="location">Location*</label>
                             <input type="text" id="location" required>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <!-- <div class="form-group">
-                        <label for="message">Additional Details</label>
-                        <textarea id="message" rows="4"></textarea>
+                    <div class="form-group">
+                        <label for="message">Drop Your Message</label>
+                        <textarea id="message" placeholder="Your Message" rows="4"  required name="message" ></textarea>
                     </div>
-                     -->
+                     
                     <button type="submit" class="submit-btn">Submit Booking Request</button>
                 </form>
             </div>
@@ -693,8 +694,8 @@
 
      <div class="footer-social">
     <h3>Follow Us</h3>
-    <a href="#" ><img id="png1" src="img/instagram.png" alt=""></a>
-    <a href="#"><img id="png2" src="img/facebook.png" alt=""></a>
+    <a href="https://www.instagram.com/aachaary_shivesh103?igsh=MTkyY2N6ZWZ1bzdldw==" ><img id="png1" src="img/instagram.png" alt=""></a>
+    <a href="https://www.facebook.com/profile.php?id=61583156557274"><img id="png2" src="img/facebook.png" alt=""></a>
     <a href="#"><img id="png3" src="img/youtube.png" alt=""></a>
   </div>
 
@@ -723,11 +724,7 @@
 </footer>
 
 
-<div class="cont1">
-    <div class="img">
-        <!-- <img src="https://thewowstyle.com/wp-content/uploads/2015/01/nature-images..jpg" alt=""> -->
-    </div>
-</div>
+
 
     
 
